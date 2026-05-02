@@ -10,7 +10,7 @@
 
         <div class="flex justify-start mb-4">
             <a href="{{ route('loguser.index') }}"
-               class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">
+               class="px-4 py-2 bg-[#fd593d] text-white rounded hover:bg-yellow-700">
                 Log Book
             </a>
         </div>

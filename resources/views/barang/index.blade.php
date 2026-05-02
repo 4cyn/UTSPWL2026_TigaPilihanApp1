@@ -10,7 +10,7 @@
             
         <div class="flex justify-start mb-4">
             <a href="{{ route('logbarang.index') }}"
-            class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">
+            class="px-4 py-2 bg-[#fd593d] text-white rounded hover:bg-[#fe914d]">
             Log Book
             </a>
         </div>
@@ -31,14 +31,14 @@
                 <div class="flex justify-between items-center mb-4">
                     <h3 class="text-lg font-bold">Data Barang</h3>
                     <a href="{{ route('barang.create') }}"
-                       class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                       class="px-4 py-2 bg-[#fe914d] text-white rounded hover:bg-[#fd593d]">
                         Tambah Barang
                     </a>
                 </div>
 
                 <div class="overflow-x-auto">
                     <table class="w-full border border-gray-300">
-                        <thead class="bg-gray-100">
+                        <thead class="bg-[#feaf52]">
                             <tr>
                                 <th class="border px-4 py-2 text-left">No</th>
                                 <th class="border px-4 py-2 text-left">Nama</th>
