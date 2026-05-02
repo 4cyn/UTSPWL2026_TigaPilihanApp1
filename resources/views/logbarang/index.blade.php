@@ -10,7 +10,7 @@
 
         <div class="flex justify-start mb-4">
             <a href="{{ route('barang.index') }}" 
-               class="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700">
+               class="px-4 py-2 bg-[#fd593d] text-white rounded hover:bg-[#fe914d]">
                 Kembali
             </a>
         </div>
@@ -21,7 +21,7 @@
 
                 <div class="overflow-x-auto">
                     <table class="w-full border border-gray-300">
-                        <thead class="bg-gray-100">
+                        <thead class="bg-[#feaf52]">
                             <tr>
                                 <th class="border px-4 py-2 text-left">No</th>
                                 <th class="border px-4 py-2 text-left">Nama Barang</th>

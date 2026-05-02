@@ -38,7 +38,7 @@
 
                 <div class="overflow-x-auto">
                     <table class="w-full border border-gray-300">
-                        <thead class="bg-gray-100">
+                        <thead class="bg-[#feaf52]">
                             <tr>
                                 <th class="border px-4 py-2 text-left">No</th>
                                 <th class="border px-4 py-2 text-left">Nama</th>
