@@ -7,8 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class LogUser extends Model
 {
     protected $fillable = [
-    'name',
-    'email',
-    'aksi',
+        'name',
+        'email',
+        'aksi',
+    ];
+
+    protected $casts = [
+        'created_at' => 'datetime',
     ];
 }

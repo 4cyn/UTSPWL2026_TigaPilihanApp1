@@ -9,7 +9,7 @@ class LogUserController extends Controller
 {
     public function index()
     {
-    $logs = LogUser::latest()->get();
-    return view('loguser.index', compact('logs'));
+        $logs = LogUser::latest()->get();
+        return view('loguser.index', compact('logs'));
     }
 }

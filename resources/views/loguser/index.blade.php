@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Log Pengguna') }}
+            {{ __('Manajemen Pengguna') }}
         </h2>
     </x-slot>
 
@@ -34,7 +34,7 @@
                             @forelse($logs as $key => $log)
                                 <tr class="hover:bg-gray-50">
                                     <td class="border px-4 py-2">{{ $key + 1 }}</td>
-                                    <td class="border px-4 py-2">{{ $log->nama_user }}</td>
+                                    <td class="border px-4 py-2">{{ $log->name }}</td>
                                     <td class="border px-4 py-2">{{ $log->email }}</td>
 
                                     <td class="border px-4 py-2">
