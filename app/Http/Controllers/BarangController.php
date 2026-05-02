@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Barang;
+use App\Models\LogBarang;
 use Illuminate\Http\Request;
 
 class BarangController extends Controller
@@ -30,6 +31,13 @@ class BarangController extends Controller
 
         Barang::create($validated);
 
+        LogBarang::create([
+        'nama_barang' => $validated['nama_barang'],
+        'kategori' => $validated['kategori'],
+        'deskripsi' => $validated['deskripsi'],
+        'aksi' => 'Tambah Barang',
+        ]);
+
         return redirect()->route('barang.index')->with('success', 'Barang berhasil ditambahkan.');
     }
 
@@ -50,12 +58,26 @@ class BarangController extends Controller
 
         $barang->update($validated);
 
+        LogBarang::create([
+        'nama_barang' => $barang->nama_barang,
+        'kategori' => $barang->kategori,
+        'deskripsi' => $barang->deskripsi,
+        'aksi' => 'Update Barang',
+        ]);
+
         return redirect()->route('barang.index')->with('success', 'Barang berhasil diupdate.');
     }
 
     public function destroy(Barang $barang)
     {
         $barang->delete();
+
+        LogBarang::create([
+        'nama_barang' => $barang->nama_barang,
+        'kategori' => $barang->kategori,
+        'deskripsi' => $barang->deskripsi,
+        'aksi' => 'Hapus Barang',
+        ]);
 
         return redirect()->route('barang.index')->with('success', 'Barang berhasil dihapus.');
     }

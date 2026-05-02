@@ -7,6 +7,13 @@
 
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            
+        <div class="flex justify-start mb-4">
+            <a href="{{ route('logbarang.index') }}"
+            class="px-4 py-2 bg-yellow-600 text-white rounded hover:bg-yellow-700">
+            Log Book
+            </a>
+        </div>
 
             @if(session('success'))
                 <div class="mb-4 p-4 bg-green-100 text-green-700 rounded">
@@ -36,6 +43,7 @@
                                 <th class="border px-4 py-2 text-left">No</th>
                                 <th class="border px-4 py-2 text-left">Nama</th>
                                 <th class="border px-4 py-2 text-left">Kategori</th>
+                                <th class="border px-4 py-2 text-left">Deskripsi</th>
                                 <th class="border px-4 py-2 text-left">Stok</th>
                                 <th class="border px-4 py-2 text-left">Harga</th>
                                 <th class="border px-4 py-2 text-left">Aksi</th>
@@ -47,6 +55,7 @@
                                     <td class="border px-4 py-2">{{ $index + 1 }}</td>
                                     <td class="border px-4 py-2">{{ $barang->nama_barang }}</td>
                                     <td class="border px-4 py-2">{{ $barang->kategori }}</td>
+                                    <td class="border px-4 py-2">{{ $barang->deskripsi }}</td>
                                     <td class="border px-4 py-2">{{ $barang->stok }}</td>
                                     <td class="border px-4 py-2">
                                         Rp {{ number_format($barang->harga, 0, ',', '.') }}

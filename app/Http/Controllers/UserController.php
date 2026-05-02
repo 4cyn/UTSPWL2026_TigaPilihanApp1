@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rule;
 use App\Models\User;
+use App\Models\LogUser;
 
 class UserController extends Controller
 {
@@ -34,6 +35,12 @@ class UserController extends Controller
             'password' => \Hash::make($validated['password']),
         ]);
 
+        LogUser::create([
+        'name' => $validated['name'],
+        'email' => $validated['email'],
+        'aksi' => 'Tambah User',
+        ]);
+
         return redirect()->route('users.index')->with('success', 'User berhasil ditambahkan.');
     }
 
@@ -58,9 +65,15 @@ class UserController extends Controller
             $user->password = Hash::make($validated['password']);
         }
 
-    $user->save();
+        $user->save();
 
-    return redirect()->route('users.index')->with('success', 'User berhasil diupdate.');
+        LogUser::create([
+        'name' => $user->name,
+        'email' => $user->email,
+        'aksi' => 'Update User',
+        ]);
+
+        return redirect()->route('users.index')->with('success', 'User berhasil diupdate.');
     }
 
     public function destroy(User $user){
@@ -69,6 +82,12 @@ class UserController extends Controller
         }
 
         $user->delete();
+
+        LogUser::create([
+        'name' => $user->name,
+        'email' => $user->email,
+        'aksi' => 'Hapus User',
+        ]);
 
         return redirect()->route('users.index')->with('success', 'User berhasil dihapus.');
     }
