@@ -17,7 +17,7 @@
     <body class="font-sans antialiased">
         <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-[#feaf52]">
             <div>
-                <a href="/">
+                <a href="/login">
                     <x-application-logo class="w-35 h-35" />
                 </a>
             </div>

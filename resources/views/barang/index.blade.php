@@ -40,13 +40,13 @@
                     <table class="w-full border border-gray-300">
                         <thead class="bg-[#feaf52]">
                             <tr>
-                                <th class="border px-4 py-2 text-left">No</th>
-                                <th class="border px-4 py-2 text-left">Nama</th>
-                                <th class="border px-4 py-2 text-left">Kategori</th>
-                                <th class="border px-4 py-2 text-left">Deskripsi</th>
-                                <th class="border px-4 py-2 text-left">Stok</th>
-                                <th class="border px-4 py-2 text-left">Harga</th>
-                                <th class="border px-4 py-2 text-left">Aksi</th>
+                                <th class="border px-4 py-2 text-center">No</th>
+                                <th class="border px-4 py-2 text-center">Nama</th>
+                                <th class="border px-4 py-2 text-center">Kategori</th>
+                                <th class="border px-4 py-2 text-center">Deskripsi</th>
+                                <th class="border px-4 py-2 text-center">Stok</th>
+                                <th class="border px-4 py-2 text-center">Harga</th>
+                                <th class="border px-4 py-2 text-center">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>

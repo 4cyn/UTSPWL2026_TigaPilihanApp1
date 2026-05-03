@@ -20,7 +20,8 @@ class AdminMiddleware
         }
 
         if (auth() ->user()->role !== 'admin'){
-            abort(483, 'Anda tidak memiliki otorisasi! Akses ditolak!');
+            return redirect()->route('dashboard')
+            ->with('error', 'Akses ditolak!');
         }
         return $next($request);
     }
