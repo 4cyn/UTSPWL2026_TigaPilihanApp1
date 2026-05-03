@@ -33,10 +33,17 @@
 
             <!-- FOOTER GLOBAL -->
             <footer class="bg-[#fe914d] text-white py-6 mt-10">
-                <div class="max-w-7xl mx-auto px-4 text-center space-y-2">
+                <div class="max-w-7xl mx-auto px-4 text-center space-y-1">
                     <h2 class="font-semibold text-lg">Kontak</h2>
-                    <p>Admin 1: (+62) 898-6391-413</p>
-                    <p>Admin 2: (+62) 896-8664-2481</p>
+                    <a href="https://wa.me/628986391413" target="_blank"
+                        class="block hover:underline hover:text-[#fff2cc]">
+                        Admin 1: (+62) 898-6391-413
+                    </a>
+
+                    <a href="https://wa.me/6289686642481" target="_blank"
+                        class="block hover:underline hover:text-[#fff2cc]">
+                        Admin 2: (+62) 896-8664-2481
+                    </a>
                     <p>Pontianak, Kalimantan Barat</p>
                 </div>
             </footer>
