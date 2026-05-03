@@ -57,7 +57,7 @@
                                     <td class="border px-4 py-2">
                                         <div class="flex gap-3">
                                         <a href="{{ route('users.edit', $user->id) }}" 
-                                           class="px-5 py-1 bg-[#ffbc28] text-white rounded">
+                                           class="px-5 py-1 bg-[#ffbc28] text-white rounded hover:bg-[#ff941d]">
                                             Edit
                                         </a>
 
@@ -68,7 +68,7 @@
                                             @csrf
                                             @method('DELETE')
                                             <button type="submit" 
-                                                    class="px-5 py-1 bg-[#ff4336] text-white rounded">
+                                                    class="px-5 py-1 bg-[#ff4336] text-white rounded hover:bg-red-600">
                                                 Hapus
                                             </button>
                                         </form>

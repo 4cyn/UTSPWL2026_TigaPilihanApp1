@@ -57,12 +57,12 @@
 
                     <div class="flex gap-2">
                         <button type="submit" 
-                                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                                class="px-4 py-2 bg-[#fd593d] text-white rounded hover:bg-[#feaf52]">
                             Simpan
                         </button>
 
                         <a href="{{ route('users.index') }}" 
-                           class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600">
+                           class="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-600">
                             Kembali
                         </a>
                     </div>

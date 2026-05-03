@@ -15,7 +15,7 @@
             </a>
         </div>
         
-        <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg p-6">
+        <div class="bg-white overflow-visible shadow-sm sm:rounded-lg p-6">
             <div class="bg-white flex justify-between items-center mb-4">
                 
                     <h3 class="text-lg font-bold">Riwayat Aktivitas Barang</h3>
