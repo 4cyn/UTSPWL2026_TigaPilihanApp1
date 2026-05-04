@@ -19,27 +19,16 @@
         </div>
     @endif
 
-    {{-- CAROUSEL --}}
-    <div 
-        x-data="{ active: 0, slides: [
-            '{{ asset('images/slide1.jpg') }}',
-            '{{ asset('images/slide2.jpg') }}',
-            '{{ asset('images/slide3.jpg') }}'
-        ] }"
-        x-init="setInterval(() => active = (active + 1) % slides.length, 3000)"
-        class="relative w-full h-64 md:h-96 overflow-hidden mb-8"
-    >
-        <template x-for="(slide, index) in slides" :key="index">
-            <img 
-                :src="slide"
-                x-show="active === index"
-                x-transition
-                class="absolute w-full h-full object-cover"
-            >
-        </template>
-    </div>
-
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {{-- BANNER --}}
+        <div class="w-full aspect-[16/9] mb-8">
+            <img 
+                src="{{ asset('images/banner.png') }}" 
+                class="w-full h-full object-cover"
+                alt="Banner"
+        >
+        </div>
 
         {{-- TENTANG KAMI --}}
         <div class="rounded-2xl p-6 mb-8 flex flex-col md:flex-row items-center gap-6">
