@@ -104,6 +104,8 @@
                                             <span class="text-[#ff941d] font-semibold">{{ $log->aksi }}</span>
                                         @elseif(str_contains($log->aksi, 'Logout'))
                                             <span class="text-gray-600 font-semibold">{{ $log->aksi }}</span>
+                                        @elseif(str_contains($log->aksi, 'Register'))
+                                            <span class="text-[#8550ef] font-semibold">{{ $log->aksi }}</span>
                                         @else
                                             {{ $log->aksi }}
                                         @endif

@@ -37,7 +37,7 @@
 
             <div>
                 <h1 class="text-2xl font-bold text-gray-800 mb-2">
-                    TigaPilihan.ptk
+                    Tentang Kami
                 </h1>
                 <p class="text-gray-600 text-justify">
                     TigaPilihan.ptk adalah sebuah usaha bisnis yang bergerak di bidang perdagangan sembako yang menyediakan produk kebutuhan pokok serta layanan jasa sebagai nilai tambah bagi konsumen. Produk utama yang ditawarkan dalam usaha ini meliputi minyak goreng, gula pasir, serta daging ayam dan sapi yang dijual dengan harga yang kompetitif dan menyesuaikan dengan kondisi pasar.
@@ -59,6 +59,7 @@
                 <ul class="ml-4 list-disc text-justify text-gray-800 space-y-2">
                     <li>Menyediakan kebutuhan pokok masyarakat dan sekitarnya dengan kualitas yang baik dan harga kompetitif</li>
                     <li>Memberikan pelayanan yang baik untuk menciptakan loyalitas dan kepuasan pelanggan</li>
+                    <li>Mengembangkan sistem yang cepat, praktis, dan efektif</li>
                     <li>Melakukan penambahan atau inovasi produk dan sistem untuk keberlangsungan usaha dan memaksimalkan profit usaha</li>
                 </ul>
             </div>

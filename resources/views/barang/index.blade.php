@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="overflow-x-auto">
-                    <table class="w-full border border-gray-300">
+                    <table class="w-full border border-gray-400">
                         <thead class="bg-[#feaf52]">
                             <tr>
                                 <th class="border px-4 py-2 text-center">No</th>
@@ -56,7 +56,7 @@
                                     <td class="border px-4 py-2">{{ $barang->nama_barang }}</td>
                                     <td class="border px-4 py-2">{{ $barang->kategori }}</td>
                                     <td class="border px-4 py-2">{{ $barang->deskripsi }}</td>
-                                    <td class="border px-4 py-2">{{ $barang->stok }}</td>
+                                    <td class="border px-4 py-2">{{ $barang->stok == 0 ? 'PO' : $barang->stok . ' pcs' }}</td>
                                     <td class="border px-4 py-2">
                                         Rp {{ number_format($barang->harga, 0, ',', '.') }}
                                     </td>
