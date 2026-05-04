@@ -24,7 +24,7 @@ class BarangController extends Controller
         $validated = $request->validate([
             'nama_barang' => ['required', 'string', 'max:255'],
             'kategori' => ['required', 'string', 'max:255'],
-            'stok' => ['required', 'integer', 'min:0'],
+            'stok' => ['required', 'integer', 'min:-1'],
             'harga' => ['required', 'numeric', 'min:0'],
             'deskripsi' => ['nullable', 'string'],
         ]);
@@ -51,7 +51,7 @@ class BarangController extends Controller
         $validated = $request->validate([
             'nama_barang' => ['required', 'string', 'max:255'],
             'kategori' => ['required', 'string', 'max:255'],
-            'stok' => ['required', 'integer', 'min:0'],
+            'stok' => ['required', 'integer', 'min:-1'],
             'harga' => ['required', 'numeric', 'min:0'],
             'deskripsi' => ['nullable', 'string'],
         ]);
