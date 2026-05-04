@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Auth\LoginRequest;
+use App\Models\LogUser;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -28,6 +29,12 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
+        LogUser::create([
+            'name' => Auth::user()->name,
+            'email' => Auth::user()->email,
+            'aksi' => 'Login User',
+        ]);
+
         return redirect()->intended(route('dashboard', absolute: false))
             ->with('success', 'Login berhasil!');;
     }
@@ -37,6 +44,14 @@ class AuthenticatedSessionController extends Controller
      */
     public function destroy(Request $request): RedirectResponse
     {
+        $user = Auth::user(); // SIMPAN dulu
+
+        LogUser::create([
+            'name' => $user->name,
+            'email' => $user->email,
+            'aksi' => 'Logout User',
+        ]);
+
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();

@@ -34,7 +34,7 @@
 
         <div class="flex items-center justify-end mt-4">
             @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-400 hover:text-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff941d]" href="{{ route('password.request') }}">
+                <a class="text-sm text-gray-400 hover:text-gray-800 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ff941d]" href="{{ route('password.request') }}">
                     {{ __('Forgot your password?') }}
                 </a>
             @endif
@@ -44,4 +44,14 @@
             </x-primary-button>
         </div>
     </form>
+
+        <div class="text-center mt-4">
+            <a class="text-sm text-gray-800">
+                Belum punya akun?
+            </a>
+            <a href="{{ route('register') }}" class="text-sm text-gray-400 hover:text-[#fd593d] underline">
+                {{ __('Create Account') }}
+            </a>
+        </div>
+
 </x-guest-layout>

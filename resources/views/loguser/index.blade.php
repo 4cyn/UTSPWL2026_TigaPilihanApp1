@@ -43,6 +43,8 @@
                                             <option value="Tambah User" {{ request('aksi') == 'Tambah User' ? 'selected' : '' }}>Tambah</option>
                                             <option value="Update User" {{ request('aksi') == 'Update User' ? 'selected' : '' }}>Update</option>
                                             <option value="Hapus User" {{ request('aksi') == 'Hapus User' ? 'selected' : '' }}>Hapus</option>
+                                            <option value="Login User" {{ request('aksi') == 'Login User' ? 'selected' : '' }}>Login </option>
+                                            <option value="Logout User" {{ request('aksi') == 'Logout User' ? 'selected' : '' }}>Logout </option>
                                         </select>
                                     </div>
 
@@ -98,9 +100,14 @@
                                             <span class="text-blue-600 font-semibold">{{ $log->aksi }}</span>
                                         @elseif(str_contains($log->aksi, 'Hapus'))
                                             <span class="text-red-600 font-semibold">{{ $log->aksi }}</span>
+                                        @elseif(str_contains($log->aksi, 'Login'))
+                                            <span class="text-[#ff941d] font-semibold">{{ $log->aksi }}</span>
+                                        @elseif(str_contains($log->aksi, 'Logout'))
+                                            <span class="text-gray-600 font-semibold">{{ $log->aksi }}</span>
                                         @else
                                             {{ $log->aksi }}
                                         @endif
+                                        
                                     </td>
 
                                     <td class="border px-4 py-2">
