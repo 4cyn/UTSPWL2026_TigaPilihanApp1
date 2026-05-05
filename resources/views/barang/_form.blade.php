@@ -1,4 +1,4 @@
-@php
+<!-- @php
     $isEdit = isset($barang);
 @endphp
 
@@ -56,4 +56,4 @@
         {{ $isEdit ? 'Update' : 'Simpan' }}
     </button>
     <a href="{{ route('barang.index') }}" class="btn btn-secondary">Kembali</a>
-</form>
+</form> -->
